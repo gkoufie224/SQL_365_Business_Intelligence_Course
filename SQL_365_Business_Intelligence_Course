@@ -1,0 +1,28 @@
+CREATE DATABASE IF NOT EXISTS Sales; 
+DROP DATABASE IF EXISTS Sales;
+
+CREATE DATABASE IF NOT EXISTS Sales;
+DROP SCHEMA IF EXISTS Sales;
+
+CREATE SCHEMA IF NOT EXISTS Sales;
+
+USE Sales;
+
+DROP TABLE IF EXISTS Test_Table;
+
+CREATE TABLE Test_Table (
+test_field Decimal (5,3)
+);
+# The SELECT statement
+select * from Test_Table;
+
+# DDL: The Insert statement
+INSERT INTO Test_Table(test_field) value (10.5);
+insert into Test_Table(test_field) Value (14.555);
+INSERT INTO Test_Table(test_field) Value (12.555);
+insert into Test_Table(test_field) Value (71.45);
+insert into Test_Table(test_field) value (16.36);
+
+#DML: Deleting records
+
+DELETE FROM Test_Table WHERE test_field = 12.555;
